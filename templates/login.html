@@ -6,10 +6,10 @@
 </head>
 <body>
     <h1>Faça o seu Login</h1>
-        <form action="submit" method="POST">{% csrf_token %} <!--sempre que tiver um form com POST precisa certificar -->
+        <form action="submit" method="POST"> {% csrf_token %} <!--sempre que tiver um form com POST precisa certificar -->
             <div align="center">
                 <label>Usuário</label>
-                <input type="username" name="username">
+                <input type="text" name="username">
                 <label>Password</label>
                 <input type="password" name="password">
                 <button type="submit">Entrar</button>
